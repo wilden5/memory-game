@@ -1,0 +1,40 @@
+.counters-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .moves-counter {
+        font-size: 3rem;
+    }
+
+    & .pairs-counter {
+        font-size: 3rem;
+    }
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    max-width: 60rem;
+
+    & .game-card {
+        aspect-ratio: 1;
+        background-color: #ccc;
+        cursor: pointer;
+        position: relative;
+        padding: 1rem;
+
+        & .game-card__back {
+            & .game-card__image {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                user-select: none;
+            }
+        }
+    }
+}
