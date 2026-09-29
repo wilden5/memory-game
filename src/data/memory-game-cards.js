@@ -9,42 +9,42 @@ import bugImage from '../assets/cards/card8.jpg';
 
 export const memoryGameCards = [
     {
-        id: 1,
+        id: '1',
         name: 'star',
         image: starImage
     },
     {
-        id: 2,
+        id: '2',
         name: 'jellyfish',
         image: jellyfishImage
     },
     {
-        id: 3,
+        id: '3',
         name: 'octopus',
         image: octopusImage
     },
     {
-        id: 4,
+        id: '4',
         name: 'coral',
         image: coralImage
     },
     {
-        id: 5,
+        id: '5',
         name: 'shell',
         image: shellImage
     },
     {
-        id: 6,
+        id: '6',
         name: 'worm',
         image: wormImage
     },
     {
-        id: 7,
+        id: '7',
         name: 'fish',
         image: fishImage
     },
     {
-        id: 8,
+        id: '8',
         name: 'bug',
         image: bugImage
     },
