@@ -1,3 +1,9 @@
+/**
+ * @param {string} tagName
+ * @param {Object} [attributes={}]
+ * @param {Array|string|number} [children=[]]
+ * @returns {HTMLElement}
+ */
 export const createNewElement = (tagName, attributes = {}, children = []) => {
     const element = document.createElement(tagName);
 

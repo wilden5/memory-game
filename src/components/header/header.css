@@ -1,0 +1,15 @@
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .header-title {
+        font-size: 4rem;
+    }
+
+    & .buttons-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+}

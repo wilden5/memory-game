@@ -1,8 +1,10 @@
 import './style.css'
-import {doubleGameArray} from "./utils/shuffle-helper.js";
+import {createHeader} from "./components/header/header.js";
 
-const init = () => {
-    console.log(doubleGameArray());
+const initApp = () => {
+    const headerElement = createHeader();
+
+    document.body.appendChild(headerElement);
 }
 
-init();
+initApp();
