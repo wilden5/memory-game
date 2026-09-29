@@ -20,7 +20,7 @@ export const createHeader = () => {
         leaderboardButton
     ]);
 
-    const header = createNewElement('header', {className:'main-header'},
+    const header = createNewElement('header', {className:'header'},
         [
             headerTitle,
             buttonsWrapper
