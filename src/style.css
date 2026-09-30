@@ -2,6 +2,7 @@
 
 @import 'components/header/header.css';
 @import 'components/game-board/game-board.css';
+@import 'components/modal-window/modal-window.css';
 
 html, body {
     display: flex;
