@@ -1,4 +1,5 @@
 import {createNewElement} from "../../utils/dom-helper.js";
+import {handleGameCardClick} from "./game-boad-logic.js";
 
 export const createGameBoard = () => {
     const movesCounter = createNewElement("div", {
@@ -53,6 +54,8 @@ const createGameCard = (card) => {
         gameCardFront,
         gameCardBack
     ]);
+
+    gameCard.addEventListener('click', handleGameCardClick);
 
     return gameCard;
 }
