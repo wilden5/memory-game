@@ -1,4 +1,6 @@
 import {GAME_STATE} from "../../state/game-state.js";
+import {createWinModalWindow} from "../modal-window/win/win-modal-window.js";
+import {openModalWindow} from "../modal-window/modal-window.js";
 
 export const handleGameCardClick = (event) => {
     const clickedCard = event.currentTarget;
@@ -28,7 +30,8 @@ const handleMatch = () => {
 
     if (GAME_STATE.MATCHED_PAIRS === 8) {
         setTimeout(() => {
-            alert('GGWP');
+            const winModalWindow = createWinModalWindow();
+            openModalWindow(winModalWindow);
         }, 500);
     }
 }

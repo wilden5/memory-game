@@ -1,12 +1,13 @@
 import {createNewElement} from "../../utils/dom-helper.js";
+import {restartGame} from "../../main.js";
 
 export const createHeader = () => {
     const headerTitle = createNewElement("h1", {
         className:'header-title',
     }, 'Wilden\'s Memory Game')
 
-    const startButton = createNewElement('button', {
-        className:'start-button'
+    const newGameButton = createNewElement('button', {
+        className:'new-game-button'
     }, 'New Game');
 
     const leaderboardButton = createNewElement('button', {
@@ -16,7 +17,7 @@ export const createHeader = () => {
     const buttonsWrapper = createNewElement('div', {
         className: 'buttons-wrapper',
     }, [
-        startButton,
+        newGameButton,
         leaderboardButton
     ]);
 
@@ -26,8 +27,8 @@ export const createHeader = () => {
             buttonsWrapper
         ]);
 
-    startButton.addEventListener('click', (event) => {
-        console.log('click start button');
+    newGameButton.addEventListener('click', (event) => {
+        restartGame();
     });
 
     leaderboardButton.addEventListener('click', (event) => {
