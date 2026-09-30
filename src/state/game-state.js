@@ -4,6 +4,7 @@ export const GAME_STATE = {
     FIRST_CLICKED_CARD: null,
     SECOND_CLICKED_CARD: null,
     IS_BOARD_LOCKED: false,
+    TIMEOUT_ID: null,
 }
 
 export const resetGameState = () => {
@@ -12,6 +13,9 @@ export const resetGameState = () => {
     GAME_STATE.FIRST_CLICKED_CARD = null
     GAME_STATE.SECOND_CLICKED_CARD = null
     GAME_STATE.IS_BOARD_LOCKED = false;
-}
 
-export const partialResetGameState = () => {}
+    if (GAME_STATE.TIMEOUT_ID) {
+        clearTimeout(GAME_STATE.TIMEOUT_ID);
+        GAME_STATE.TIMEOUT_ID = null;
+    }
+}

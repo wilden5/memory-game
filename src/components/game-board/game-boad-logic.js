@@ -39,7 +39,7 @@ const handleMatch = () => {
 const handleUnmatch = () => {
     GAME_STATE.IS_BOARD_LOCKED = true;
 
-    setTimeout(() => {
+    GAME_STATE.TIMEOUT_ID = setTimeout(() => {
         GAME_STATE.FIRST_CLICKED_CARD.classList.remove('card-flipped');
         GAME_STATE.SECOND_CLICKED_CARD.classList.remove('card-flipped');
         GAME_STATE.FIRST_CLICKED_CARD = null;
