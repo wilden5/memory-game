@@ -1,6 +1,7 @@
 import {GAME_STATE} from "../../state/game-state.js";
 import {createWinModalWindow} from "../modal-window/win/win-modal-window.js";
 import {openModalWindow} from "../modal-window/modal-window.js";
+import {updateLeaderboardData} from "../../utils/leaderboard-helper.js";
 
 export const handleGameCardClick = (event) => {
     const clickedCard = event.currentTarget;
@@ -29,6 +30,8 @@ const handleMatch = () => {
     updateMatchedPairsDisplay(GAME_STATE.MATCHED_PAIRS);
 
     if (GAME_STATE.MATCHED_PAIRS === 8) {
+        updateLeaderboardData(GAME_STATE.USER_MOVES);
+
         setTimeout(() => {
             const winModalWindow = createWinModalWindow();
             openModalWindow(winModalWindow);

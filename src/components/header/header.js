@@ -27,9 +27,7 @@ export const createHeader = () => {
             buttonsWrapper
         ]);
 
-    newGameButton.addEventListener('click', (event) => {
-        restartGame();
-    });
+    newGameButton.addEventListener('click', restartGame);
 
     leaderboardButton.addEventListener('click', (event) => {
         console.log('click leaderboard button');
