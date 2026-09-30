@@ -3,6 +3,7 @@ export const GAME_STATE = {
     MATCHED_PAIRS: 0,
     FIRST_CLICKED_CARD: null,
     SECOND_CLICKED_CARD: null,
+    IS_BOARD_LOCKED: false,
 }
 
 export const resetGameState = () => {
@@ -10,4 +11,7 @@ export const resetGameState = () => {
     GAME_STATE.MATCHED_PAIRS = 0
     GAME_STATE.FIRST_CLICKED_CARD = null
     GAME_STATE.SECOND_CLICKED_CARD = null
+    GAME_STATE.IS_BOARD_LOCKED = false;
 }
+
+export const partialResetGameState = () => {}
