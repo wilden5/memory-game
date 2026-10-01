@@ -9,11 +9,11 @@ export const createHeader = () => {
     }, 'Wilden\'s Memory Game')
 
     const newGameButton = createNewElement('button', {
-        className:'new-game-button'
+        className:'header-button new-game-button'
     }, 'New Game');
 
     const leaderboardButton = createNewElement('button', {
-        className:'leaderboard-button'
+        className:'header-button leaderboard-button'
     }, 'Leaderboard');
 
     const buttonsWrapper = createNewElement('div', {
