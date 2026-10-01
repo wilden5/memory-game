@@ -14,8 +14,8 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        border: 0.5rem solid #3498db;
-        border-radius: 0.5rem;
+        border-top: 0.5rem solid #3498db;
+        border-bottom: 0.5rem solid #3498db;
     }
 
     & .buttons-wrapper {
