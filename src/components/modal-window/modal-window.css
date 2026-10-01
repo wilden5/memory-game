@@ -1,0 +1,29 @@
+@import 'win/win-modal-window.css';
+@import 'leaderboard/leaderboard-modal-window.css';
+
+body.lock-scroll {
+    overflow: hidden;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    & .modal-window {
+        background-color: #ffffff;
+        padding: 3rem;
+        border-radius: 1.2rem;
+        position: relative;
+        max-width: 90%;
+        width: 40rem;
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .footer-content {
+        font-size: 1.4rem;
+        color: #475569;
+        font-weight: 500;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 0.8rem 1.6rem;
+        border-radius: 2rem;
+        backdrop-filter: blur(0.4rem);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+
+        & .author-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s ease;
+
+            &:hover {
+                color: #2980b9;
+                text-decoration: none;
+            }
+        }
+    }
+}
+

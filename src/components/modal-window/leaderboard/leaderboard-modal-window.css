@@ -1,0 +1,59 @@
+.leaderboard-wrapper {
+    text-align: center;
+
+    & .leaderboard-title {
+        font-size: 2.2rem;
+        color: #2c3e50;
+        margin-bottom: 2rem;
+    }
+
+    & .leaderboard-empty {
+        font-size: 1.6rem;
+        color: #7f8c8d;
+        margin: 2rem 0;
+    }
+
+    & .leaderboard-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 2.5rem;
+        font-size: 1.4rem;
+
+        & th,
+        & td {
+            padding: 1rem;
+            border-bottom: 0.1rem solid #e2e8f0;
+            text-align: center;
+        }
+
+        & th {
+            background-color: #f8fafc;
+            color: #64748b;
+            font-weight: 600;
+        }
+
+        & tr {
+            &:hover {
+                & td {
+                    background-color: #e5ecff;
+                }
+            }
+        }
+    }
+
+    & .leaderboard-close-button {
+        padding: 0.8rem 2rem;
+        font-size: 1.4rem;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: #c0392b;
+        }
+    }
+}
