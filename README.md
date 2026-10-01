@@ -21,7 +21,7 @@ To run this project locally, you need to have [Node.js](https://nodejs.org) (LTS
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com
+   git clone https://github.com/wilden5/memory-game.git
    ```
 
 2. **Install dependencies:**
