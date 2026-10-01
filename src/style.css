@@ -3,6 +3,7 @@
 @import 'components/header/header.css';
 @import 'components/game-board/game-board.css';
 @import 'components/modal-window/modal-window.css';
+@import 'components/footer/footer.css';
 
 html, body {
     font-size: 10px;

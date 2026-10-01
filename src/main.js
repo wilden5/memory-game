@@ -4,6 +4,7 @@ import {createGameBoard, renderGameCards} from "./components/game-board/game-boa
 import {doubleGameArray, shuffleGameArray} from "./utils/shuffle-helper.js";
 import {resetGameState} from "./state/game-state.js";
 import {closeModalWindow} from "./components/modal-window/modal-window.js";
+import {createFooter} from "./components/footer/footer.js";
 
 export const restartGame = () => {
     resetGameState();
@@ -22,9 +23,11 @@ export const restartGame = () => {
 const initApp = () => {
     const headerElement = createHeader();
     const gameBoardElement = createGameBoard();
+    const footerElement = createFooter();
 
     document.body.appendChild(headerElement);
     document.body.appendChild(gameBoardElement);
+    document.body.appendChild(footerElement);
 
     const initialCards = shuffleGameArray(doubleGameArray());
     renderGameCards(initialCards);
