@@ -1,5 +1,7 @@
 # Wilden's Memory Game
 
+![Screenshot of project](./src/assets/project-preview.png)
+
 An interactive card-matching game (Memory Game) developed as part of the **RS School** front-end development course.
 
 The player needs to flip cards, remember their positions, and find all matching pairs in the fewest number of moves.
