@@ -1,4 +1,5 @@
 @import 'win/win-modal-window.css';
+@import 'leaderboard/leaderboard-modal-window.css';
 
 body.lock-scroll {
     overflow: hidden;

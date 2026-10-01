@@ -1,5 +1,7 @@
 import {createNewElement} from "../../utils/dom-helper.js";
 import {restartGame} from "../../main.js";
+import {createLeaderboardModalWindow} from "../modal-window/leaderboard/leaderboard-modal-window.js";
+import {openModalWindow} from "../modal-window/modal-window.js";
 
 export const createHeader = () => {
     const headerTitle = createNewElement("h1", {
@@ -29,8 +31,9 @@ export const createHeader = () => {
 
     newGameButton.addEventListener('click', restartGame);
 
-    leaderboardButton.addEventListener('click', (event) => {
-        console.log('click leaderboard button');
+    leaderboardButton.addEventListener('click', () => {
+        const leaderboardData = createLeaderboardModalWindow();
+        openModalWindow(leaderboardData);
     });
 
     return header;
