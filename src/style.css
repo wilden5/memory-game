@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@import 'components/header/header.css';
+@import 'components/game-board/game-board.css';
+@import 'components/modal-window/modal-window.css';
+@import 'components/footer/footer.css';
+
+html, body {
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+}
+
+body {
+    background-image: url('./assets/background-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
